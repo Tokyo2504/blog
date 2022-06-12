@@ -1,0 +1,50 @@
+.hero {
+  padding-top: 146px;
+  padding-bottom: 71px;
+
+  &__container {
+    @include grid;
+  }
+
+  &__left {
+    grid-column: 6 span;
+  }
+
+  &__right {
+    position: relative;
+    grid-column: 8 / 3 span;
+    border-radius: 50%;
+    width: 243px;
+    height: 243px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -5px;
+      top: -6px;
+      display: block;
+      border-radius: 50%;
+      width: 243px;
+      height: 243px;
+      background-color: $section-bg;
+    }
+  }
+
+  &__img {
+    border-radius: 50%;
+    width: 243px;
+    height: 243px;
+    transform: translateY(-18px);
+  }
+
+  &__title {
+    @include font(44px, 60px);
+
+    margin-bottom: 24px;
+    max-width: 506px;
+  }
+
+  &__text {
+    margin-bottom: 32px;
+  }
+}

@@ -17,13 +17,13 @@ html {
 }
 
 .page__body {
+  @include font($font-size, $line-height);
+
   margin: 0;
   min-width: 320px;
   min-height: 100%;
   font-weight: $font-weight;
   font-style: $font-style;
-  font-size: $font-size;
-  line-height: $line-height;
   color: $primary-color;
   background-color: $color-bg;
 }
