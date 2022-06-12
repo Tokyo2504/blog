@@ -1,0 +1,47 @@
+.meta {
+  @include flex;
+
+  align-items: center;
+
+  &__item {
+    @include mr(57px);
+
+    position: relative;
+    font-size: 18px;
+    color: $black-color;
+
+    &:not(:last-child) {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        display: inline-block;
+        margin-left: 30px;
+        width: 1px;
+        height: 21px;
+        background-color: $black-color;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+.meta-work {
+  @include flex-v-center;
+}
+
+.meta-time {
+  margin-right: 26px;
+  border-radius: 16px;
+  padding: 0 10px;
+  font-weight: 900;
+  font-size: 18px;
+  color: $color-bg;
+  background-color: #142850;
+}
+
+.meta-category {
+  @include font(20px, 29px);
+
+  color: $gray-color;
+}

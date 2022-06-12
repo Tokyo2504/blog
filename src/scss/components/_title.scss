@@ -1,6 +1,16 @@
 .title {
+  @include font(30px, 44px);
+
   margin: 0;
   font-weight: 700;
   text-align: left;
   color: $primary-color;
+
+  &--sm {
+    @include font(26px, 38px);
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
 }

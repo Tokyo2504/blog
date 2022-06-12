@@ -1,11 +1,16 @@
 <header class="header">
   <div class="container header__container">
-    <nav class="nav" title="">
-      <ul class="nav__list list-reset">
-        <li class="nav__item"><a href="#" class="nav__link">Works</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+    <nav class="nav" title="main menu">
+      <ul class="nav__list list-reset" data-menu>
+        <li class="nav__item"><a href="#" class="nav__link" data-menu-item>Works</a></li>
+        <li class="nav__item"><a href="#" class="nav__link" data-menu-item>Blog</a></li>
+        <li class="nav__item"><a href="#" class="nav__link" data-menu-item>Contact</a></li>
       </ul>
     </nav>
+    <button class="burger" aria-label="Open menu" aria-expanded="false"  data-burger>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
   </div>
 </header>

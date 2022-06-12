@@ -1,0 +1,61 @@
+.recrent {
+  padding-top: 21px;
+  padding-bottom: 32px;
+  background-color: $section-bg;
+
+  &__container {
+    @include grid;
+
+    column-gap: 20px;
+    row-gap: 15px;
+
+    @include small-tablet {
+      column-gap: 0;
+    }
+  }
+
+  &__top {
+    @include flex-all-sb;
+
+    grid-column: 10 span;
+  }
+
+  &__news {
+    grid-column: 5 span;
+    border-radius: 4px;
+    padding: 24px 23px 7px;
+    box-shadow: 0 4px 10px rgba(#bbe1fa, 0.25);
+    background-color: $color-bg;
+
+    @include small-tablet {
+      grid-column: 10 span;
+    }
+  }
+
+  &__subtitle {
+    font-size: 22px;
+    letter-spacing: -0.6px;
+
+    @include small-tablet {
+      font-size: 20px;
+    }
+  }
+
+  &__link {
+    @include font(16px, 24px);
+
+    color: $blue-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__title {
+    margin-bottom: 26px;
+  }
+
+  &__meta {
+    margin-bottom: 18px;
+  }
+}

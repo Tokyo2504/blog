@@ -4,5 +4,15 @@
 
   &__container {
     max-width: 1062px;
+
+    @include mobile {
+      @include flex-all-center;
+
+      justify-content: flex-end;
+    }
+  }
+
+  @include small-tablet {
+    padding-top: 20px;
   }
 }
