@@ -31,6 +31,18 @@
         &::after {
           content: "";
           margin-left: 25px;
+          height: 12px;
+        }
+      }
+
+      @include mobile {
+        @include mr(24px);
+
+        &:not(:last-child) {
+          &::after {
+            content: "";
+            margin-left: 12px;
+          }
         }
       }
     }

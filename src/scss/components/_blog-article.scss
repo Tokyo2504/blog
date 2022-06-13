@@ -34,20 +34,45 @@
     @include font(44px, 60px);
 
     margin-bottom: 49px;
+
+    @include mobile {
+      @include font(30px, 60px);
+
+      margin-bottom: 20px;
+    }
+  }
+
+  &__heading {
+    margin-bottom: 4px;
+
+    @include mobile {
+      @include font(26px, 38px);
+    }
   }
 
   &__meta {
-    margin-top: 4px;
     margin-bottom: 11px;
 
     time {
       @include font(20px, 29px);
+
+      @include mobile {
+        @include font(16px, 24px);
+      }
     }
 
     span {
       @include font(20px, 29px);
 
       color: $gray-color;
+
+      @include mobile {
+        @include font(16px, 24px);
+      }
     }
+  }
+
+  @include mobile {
+    padding-top: 25px;
   }
 }
