@@ -34,7 +34,6 @@ const plumber = require('gulp-plumber');
 const path = require('path');
 const zip = require('gulp-zip');
 const rootFolder = path.basename(path.resolve());
-
 // paths
 const srcFolder = './src';
 const buildFolder = './app';
