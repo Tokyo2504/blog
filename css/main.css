@@ -656,6 +656,7 @@ a {
   width: 100%;
 }
 .futered__img img {
+  width: 100%;
   -webkit-transition: -webkit-transform 0.8s ease-in-out;
   transition: -webkit-transform 0.8s ease-in-out;
   -o-transition: transform 0.8s ease-in-out;
@@ -846,6 +847,7 @@ a {
   width: 100%;
 }
 .works__img img {
+  width: 100%;
   -webkit-transition: -webkit-transform 0.8s ease-in-out;
   transition: -webkit-transform 0.8s ease-in-out;
   -o-transition: transform 0.8s ease-in-out;
