@@ -68,4 +68,8 @@
       text-decoration: underline;
     }
   }
+
+  @include mobile {
+    padding-bottom: 25px;
+  }
 }

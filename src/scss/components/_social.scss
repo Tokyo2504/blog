@@ -1,5 +1,5 @@
 .social {
-  @include flex-h-center;
+  @include flex-all-center;
 
   &__item {
     @include mr(37px);

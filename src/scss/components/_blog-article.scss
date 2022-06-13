@@ -45,6 +45,17 @@
   &__heading {
     margin-bottom: 4px;
 
+    a {
+      &:focus {
+        outline-color: $bittersweet-color;
+        outline-offset: 1px;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
     @include mobile {
       @include font(26px, 38px);
     }
@@ -74,5 +85,6 @@
 
   @include mobile {
     padding-top: 25px;
+    padding-bottom: 25px;
   }
 }

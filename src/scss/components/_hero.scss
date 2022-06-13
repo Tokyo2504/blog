@@ -81,7 +81,10 @@
       @include font(32px, 40px);
 
       margin-bottom: 20px;
-      text-align: center;
+
+      p {
+        text-align: center;
+      }
     }
   }
 

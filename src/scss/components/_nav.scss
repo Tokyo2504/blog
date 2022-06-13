@@ -37,6 +37,10 @@
     color: $black-color;
     transition: color 0.3s ease-in-out;
 
+    &:focus {
+      outline-color: $bittersweet-color;
+    }
+
     &:hover {
       color: $bittersweet-color;
       transition: color 0.3s ease-in-out;
@@ -52,8 +56,4 @@
   opacity: 1;
   visibility: visible;
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-}
-
-.nav-link--active {
-  color: $bittersweet-color;
 }

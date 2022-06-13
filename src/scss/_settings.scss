@@ -121,3 +121,8 @@ a {
 .page--ios .dis-scroll {
   position: relative;
 }
+
+.focus-visible {
+  outline-color: $bittersweet-color;
+  outline-offset: 1px;
+}

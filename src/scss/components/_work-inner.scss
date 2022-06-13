@@ -1,0 +1,109 @@
+.work-inner {
+  padding-top: 65px;
+  padding-bottom: 30px;
+
+  &__container {
+    @include grid;
+
+    max-width: 711px;
+    row-gap: 0;
+  }
+
+  &__head {
+    @include flex;
+
+    justify-content: space-between;
+
+    svg {
+      width: 40px;
+      height: 40px;
+      color: inherit;
+      fill: currentcolor;
+
+      @include mobile {
+        width: 25px;
+        height: 25px;
+      }
+    }
+  }
+
+  &__link {
+    width: 40px;
+    height: 40px;
+    transform: translateY(5px);
+
+    @include mobile {
+      width: 25px;
+      height: 25px;
+      transform: translateY(-15px);
+    }
+  }
+
+  &__title {
+    @include font(34px, 50px);
+
+    margin-bottom: 30px;
+    max-width: 506px;
+
+    @include mobile {
+      @include font(30px, 40px);
+    }
+  }
+
+  &__meta {
+    margin-bottom: 28px;
+  }
+
+  &__text {
+    margin-bottom: 42px;
+    color: $black-color;
+
+    &--mb {
+      margin-bottom: 29px;
+      padding-left: 4px;
+    }
+
+    @include mobile {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__top {
+    grid-column: 10 span;
+    margin-bottom: 62px;
+    width: 100%;
+
+    @include mobile {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__content {
+    grid-column: 10 span;
+  }
+
+  &__headings {
+    margin-bottom: 19px;
+    padding-left: 3px;
+  }
+
+  &__heading {
+    margin-bottom: 5px;
+    font-size: 30px;
+
+    &--sm {
+      font-size: 24px;
+    }
+  }
+
+  &__img {
+    @include mb(27px);
+
+    overflow: hidden;
+  }
+
+  @include mobile {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
