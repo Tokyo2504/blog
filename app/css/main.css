@@ -1127,6 +1127,9 @@ a {
   margin-right: 37px;
 }
 .social__link {
+  display: block;
+  width: 30px;
+  height: 30px;
   color: #21243d;
 }
 .social__link svg {
