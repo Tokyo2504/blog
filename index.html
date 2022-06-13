@@ -23,9 +23,9 @@
     <nav class="nav" title="main menu">
       <ul class="nav__list list-reset" data-menu>
         <li class="nav__item"><a href="index.html" class="nav__link nav-link--active" data-menu-item>Home</a></li>
-        <li class="nav__item"><a href="#" class="nav__link" data-menu-item>Works</a></li>
+        <li class="nav__item"><a href="work.html" class="nav__link" data-menu-item>Works</a></li>
         <li class="nav__item"><a href="blog.html" class="nav__link" data-menu-item>Blog</a></li>
-        <li class="nav__item"><a href="#" class="nav__link" data-menu-item>Contact</a></li>
+        <li class="nav__item"><a href="#contacts" class="nav__link" data-menu-item>Contact</a></li>
       </ul>
     </nav>
     <button class="burger" aria-label="Open menu" aria-expanded="false"  data-burger>
@@ -63,8 +63,8 @@
     <article class="recrent__news">
       <h3 class="title title--sm recrent__title"><a href="#">Making a design system from scratch</a></h3>
       <ul class="meta list-reset recrent__meta">
-       <li class="meta__item"><time datatime="2020-02-12 12:00">12 Feb 2020</time></li>
-       <li class="meta__item">
+       <li class="meta__item meta__item--recrent"><time datatime="2020-02-12 12:00">12 Feb 2020</time></li>
+       <li class="meta__item meta__item--recrent">
         <span>Design,</span>
         <span>Pattern</span>
        </li>
@@ -74,8 +74,8 @@
     <article class="recrent__news">
       <h3 class="title title--sm recrent__title"><a href="#">Creating pixel perfect icons in Figma</a></h3>
       <ul class="meta list-reset recrent__meta">
-       <li class="meta__item"><time datatime="2020-02-12 12:00">12 Feb 2020</time></li>
-       <li class="meta__item">
+       <li class="meta__item meta__item--recrent"><time datatime="2020-02-12 12:00">12 Feb 2020</time></li>
+       <li class="meta__item meta__item--recrent">
         <span>Figma,</span>
         <span>Icon Design</span>
        </li>
@@ -94,7 +94,7 @@
         <h3 class="title futered__title"><a class="futered__link" href="#">Designing Dashboards</a></h3>
         <div class="meta-work futered__meta">
           <span class="meta-time">2020</span>
-          <p class="meta-category">Dashboard</p>
+          <span class="meta-category">Dashboard</span>
         </div>
         <div class="futered__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
       </div>
@@ -105,7 +105,7 @@
         <h3 class="title futered__title"><a class="futered__link" href="#">Vibrant Portraits of 2020</a></h3>
         <div class="meta-work futered__meta">
           <span class="meta-time">2018</span>
-          <p class="meta-category">Illustration</p>
+          <span class="meta-category">Illustration</span>
         </div>
         <div class="futered__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
       </div>
@@ -116,7 +116,7 @@
         <h3 class="title futered__title"><a class="futered__link" href="#">36 Days of Malayalam type</a></h3>
         <div class="meta-work futered__meta">
           <span class="meta-time">2018</span>
-          <p class="meta-category">Typography</p>
+          <span class="meta-category">Typography</span>
         </div>
         <div class="futered__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
       </div>
@@ -129,30 +129,30 @@
 
     <footer class="footer">
   <div class="container">
-    <ul class="social list-reset footer__social" title="social">
+    <ul class="social list-reset footer__social" title="social" id="contacts">
       <li class="social__item">
-        <a href="#" target="_blank" class="social__link social__link--fb" aria-label="Our Facebook">
+        <a href="#" target="_blank" class="social__link" aria-label="Our Facebook">
           <svg>
             <use xlink:href="img/sprite.svg#fb"></use>
           </svg>
         </a>
       </li>
       <li class="social__item">
-        <a href="#" target="_blank" class="social__link social__link--inst" aria-label="Our Instagram">
+        <a href="#" target="_blank" class="social__link" aria-label="Our Instagram">
           <svg class="">
             <use xlink:href="img/sprite.svg#inst"></use>
           </svg>
         </a>
       </li>
       <li class="social__item">
-        <a href="#" target="_blank" class="social__link social__link--tw" aria-label="Our Twitter">
+        <a href="#" target="_blank" class="social__link" aria-label="Our Twitter">
           <svg class="">
             <use xlink:href="img/sprite.svg#tw"></use>
           </svg>
         </a>
       </li>
       <li class="social__item">
-        <a href="#" target="_blank" class="social__link social__link--linkedin" aria-label="Our LinkedIn">
+        <a href="#" target="_blank" class="social__link" aria-label="Our LinkedIn">
           <svg class="">
             <use xlink:href="img/sprite.svg#lin"></use>
           </svg>
