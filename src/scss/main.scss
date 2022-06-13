@@ -9,12 +9,15 @@
 // подключения компонентов страницы
 @import "./components/header";
 @import "./components/nav";
-@import "./components/btn";
-@import "./components/title";
 @import "./components/hero";
 @import "./components/recent";
 @import "./components/meta";
 @import "./components/futered";
-@import "./components/social";
-@import "./components/burger";
+@import "./components/title";
+@import "./components/blog-article";
 @import "./components/footer";
+
+// подключения небольших компонентов страницы
+@import "./components/burger";
+@import "./components/btn";
+@import "./components/social";

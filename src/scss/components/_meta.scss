@@ -23,6 +23,17 @@
         transform: translateY(-50%);
       }
     }
+
+    &--blog {
+      @include mr(45px);
+
+      &:not(:last-child) {
+        &::after {
+          content: "";
+          margin-left: 25px;
+        }
+      }
+    }
   }
 }
 

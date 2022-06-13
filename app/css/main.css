@@ -281,37 +281,8 @@ a {
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-.btn {
-  padding: 12px 21px;
-  font-weight: 500;
-  font-size: 20px;
-  color: #fff;
-  background-color: #ff6464;
-  -webkit-transition: background-color 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
-}
-.btn:hover {
-  background-color: #21243d;
-  -webkit-transition: background-color 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
-}
-
-.title {
-  font-size: 30px;
-  line-height: 1.4666666667;
-  margin: 0;
-  font-weight: 700;
-  text-align: left;
-  color: #21243d;
-}
-.title--sm {
-  font-size: 26px;
-  line-height: 1.4615384615;
-}
-.title--sm a:hover {
-  text-decoration: underline;
+.nav-link--active {
+  color: #ff6464;
 }
 
 .hero {
@@ -534,6 +505,13 @@ a {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+.meta__item--blog:not(:last-child) {
+  margin-right: 45px;
+}
+.meta__item--blog:not(:last-child)::after {
+  content: "";
+  margin-left: 25px;
+}
 
 .meta-work {
   display: -webkit-box;
@@ -643,34 +621,79 @@ a {
   text-decoration: underline;
 }
 
-.social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-.social__item:not(:last-child) {
-  margin-right: 37px;
-}
-.social__link {
+.title {
+  font-size: 30px;
+  line-height: 1.4666666667;
+  margin: 0;
+  font-weight: 700;
+  text-align: left;
   color: #21243d;
 }
-.social__link svg {
-  width: 30px;
-  height: 30px;
-  color: inherit;
-  fill: currentcolor;
-  -webkit-transition: fill 0.3s ease-in-out;
-  -o-transition: fill 0.3s ease-in-out;
-  transition: fill 0.3s ease-in-out;
+.title--sm {
+  font-size: 26px;
+  line-height: 1.4615384615;
 }
-.social__link svg:hover {
-  fill: #ff6464;
-  -webkit-transition: fill 0.3s ease-in-out;
-  -o-transition: fill 0.3s ease-in-out;
-  transition: fill 0.3s ease-in-out;
+.title--sm a:hover {
+  text-decoration: underline;
+}
+
+.blog-article {
+  padding-top: 78px;
+}
+.blog-article__container {
+  max-width: 711px;
+}
+.blog-article__news {
+  margin-bottom: 31px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 24px;
+}
+.blog-article__subtitle {
+  font-size: 22px;
+  letter-spacing: -0.6px;
+}
+@media (max-width: 768px) {
+  .blog-article__subtitle {
+    font-size: 20px;
+  }
+}
+.blog-article__link {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #00a8cc;
+}
+.blog-article__link:hover {
+  text-decoration: underline;
+}
+.blog-article__title {
+  font-size: 44px;
+  line-height: 1.3636363636;
+  margin-bottom: 49px;
+}
+.blog-article__meta {
+  margin-top: 4px;
+  margin-bottom: 11px;
+}
+.blog-article__meta time {
+  font-size: 20px;
+  line-height: 1.45;
+}
+.blog-article__meta span {
+  font-size: 20px;
+  line-height: 1.45;
+  color: #8695a4;
+}
+
+.footer {
+  padding-top: 48px;
+  padding-bottom: 54px;
+}
+.footer__social {
+  margin-bottom: 20px;
+}
+.footer__copy {
+  font-size: 14px;
+  text-align: center;
 }
 
 .burger {
@@ -762,15 +785,50 @@ a {
   }
 }
 
-.footer {
-  padding-top: 48px;
-  padding-bottom: 54px;
+.btn {
+  padding: 12px 21px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  background-color: #ff6464;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
-.footer__social {
-  margin-bottom: 20px;
+.btn:hover {
+  background-color: #21243d;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
-.footer__copy {
-  font-size: 14px;
-  text-align: center;
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.social__item:not(:last-child) {
+  margin-right: 37px;
+}
+.social__link {
+  color: #21243d;
+}
+.social__link svg {
+  width: 30px;
+  height: 30px;
+  color: inherit;
+  fill: currentcolor;
+  -webkit-transition: fill 0.3s ease-in-out;
+  -o-transition: fill 0.3s ease-in-out;
+  transition: fill 0.3s ease-in-out;
+}
+.social__link svg:hover {
+  fill: #ff6464;
+  -webkit-transition: fill 0.3s ease-in-out;
+  -o-transition: fill 0.3s ease-in-out;
+  transition: fill 0.3s ease-in-out;
 }
 /*# sourceMappingURL=main.css.map */
