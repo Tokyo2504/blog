@@ -40,6 +40,15 @@
     border-radius: 6px;
     width: 100%;
 
+    img {
+      transition: transform 0.8s ease-in-out;
+
+      &:hover {
+        transform: scale(1.2);
+        transition: transform 0.8s ease-in-out;
+      }
+    }
+
     @include mobile {
       grid-column: 12 span;
       width: 100%;
