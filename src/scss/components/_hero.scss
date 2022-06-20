@@ -73,6 +73,10 @@
     margin-bottom: 24px;
     max-width: 506px;
 
+    span {
+      display: inline-block;
+    }
+
     @include small-tablet {
       font-size: 38px;
     }
