@@ -394,6 +394,9 @@ a {
   margin-bottom: 24px;
   max-width: 506px;
 }
+.hero__title span {
+  display: inline-block;
+}
 @media (max-width: 768px) {
   .hero__title {
     font-size: 38px;
@@ -405,7 +408,7 @@ a {
     line-height: 1.25;
     margin-bottom: 20px;
   }
-  .hero__title p {
+  .hero__title span {
     text-align: center;
   }
 }
